@@ -1,7 +1,12 @@
+body > section {
+  padding-bottom: 100px;
+}
+
 #welcomeScreen {
   display: flex;
   width: 100vw;
   height: 100vh;
+  margin-bottom: 56px;
   background-image: url(../images/narkomfin.jpeg);
   background-size: cover;
 }
@@ -10,7 +15,7 @@
   margin: auto;
 }
 
-section,
+.articleGroup,
 #welcomeScreen h1,
 #welcomeScreen p {
   width: 700px;
@@ -24,14 +29,18 @@ section,
   letter-spacing: -2.4px;
 }
 
-h2 {
-  margin-top: 44px;
+.articleGroup {
+  padding-top: 44px;
+}
+
+.articleGroup h2 {
+  /*margin-top: 44px;*/
   font-size: 35px;
   font-weight: bold;
   letter-spacing: -0.4px;
 }
 
-h3 {
+.articleGroup h3 {
   margin-top: 60px;
   text-align: left;
   font-size: 31px;
@@ -39,38 +48,35 @@ h3 {
   color: rgba(0,0,0,0.44);
 }
 
-p, li {
+.articleGroup p, .articleGroup li {
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
   margin-bottom: 30px;
   font-size: 22px;
   line-height: 1.5;
   letter-spacing: 0.16px;
 }
 
-p {
+.articleGroup p {
   margin-top: 30px;
 }
 
-h2 + p {
+.articleGroup h2 + p {
   margin-top: 8px;
 }
 
-b {
-  font-weight: bold;
-}
-
-a {
+.articleGroup a {
   color: black;
 }
 
-ul {
+.articleGroup ul {
   margin-top: 32px;
   margin-left: 30px;
 }
 
-ul {
+.articleGroup ul {
   list-style-type: disc;
 }
 
-li {
+.articleGroup li {
   margin-bottom: 14px;
 }
